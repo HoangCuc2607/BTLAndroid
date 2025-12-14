@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Restaurant-Ingredients-management</string>
+    <string name="channel_name">Low Stock Alerts</string>
+    <string name="channel_description">Notifications for low stock and expired ingredients.</string>
+</resources>

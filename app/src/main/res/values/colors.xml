@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="resolved_background">#D6EAF8</color> <!-- Màu nền khi đã giải quyết -->
+    <color name="unresolved_background">#FADBD8</color> <!-- Màu nền khi chưa giải quyết -->
+    <color name="resolved_text">#1B4F72</color> <!-- Màu chữ khi đã giải quyết -->
+    <color name="unresolved_text">#922B21</color> <!-- Màu chữ khi chưa giải quyết -->
+
+    <color name="primary">#3F51B5</color>
+    <color name="list_background">#FAF0A8</color>
+    <color name="divider">#E0E0E0</color>
+    <color name="button_background">#FF9800</color>
+    <color name="spinner_background">#E0F7FA</color>
+    <color name="tran_import_green">#2E7D32</color>
+</resources>

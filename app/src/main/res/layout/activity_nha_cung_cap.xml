@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.NhaCungCap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/resolved_background"
+        android:orientation="vertical"
+        android:padding="10sp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-72dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Tên nhà cung cấp"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_ten_ncc"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="10dp"
+                android:background="#F5F5F5"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Nhập tên nhà cung cấp"
+                android:inputType="text"
+                android:paddingHorizontal="5sp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Địa chỉ"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_dia_chi"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="10dp"
+                android:background="#F5F5F5"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Nhập địa chỉ"
+                android:inputType="text"
+                android:paddingHorizontal="5sp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="Thông tin liên hệ"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/edt_tt_lienhe"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:layout_marginTop="5sp"
+                android:layout_marginBottom="10dp"
+                android:background="#F5F5F5"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="Nhập thông tin liên hệ"
+                android:inputType="text"
+                android:paddingHorizontal="5sp"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_sua_ncc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:backgroundTint="#3C3D37"
+                    android:fontFamily="monospace"
+                    android:text="Sửa"
+                    android:textSize="16sp"
+                    app:cornerRadius="5dp" />
+
+                <Button
+                    android:id="@+id/btn_timkiem_ncc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#3C3D37"
+                    android:fontFamily="monospace"
+                    android:text="Tìm kiếm"
+                    android:textSize="16sp"
+                    app:cornerRadius="5dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_them_ncc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:backgroundTint="#3C3D37"
+                    android:fontFamily="monospace"
+                    android:text="Thêm"
+                    android:textSize="16sp"
+                    app:cornerRadius="5dp" />
+
+                <Button
+                    android:id="@+id/btn_xoa_ncc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="50dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#3C3D37"
+                    android:fontFamily="monospace"
+                    android:text="Xóa"
+                    android:textSize="16sp"
+                    app:cornerRadius="5dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvSuppliers"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#9AC8E7" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
